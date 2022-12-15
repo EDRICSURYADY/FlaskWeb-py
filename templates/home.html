@@ -41,6 +41,7 @@
           <a class="nav-link" href="{{url_for('Fashion')}}"class="Page-scroll">Product</a>
           <a class="nav-link" href="{{url_for('Contact')}}"class="Page-scroll">Contact Us</a>
           <a class="btn tombol "href="{{url_for('Login')}}"class="Page-scroll">LOGIN / REGISTER</a>
+          <a class="btn tombol "href="{{url_for('logout')}}"class="Page-scroll">Keluar partai</a>
         </div>
       </div>
     </div>
@@ -50,7 +51,7 @@
     <!-- Jumbotron -->
     <div class="jumbotron">
       <div class="container"data-aos="fade-up-right">
-        <h1 class="display-4 ml-auto"span>WELCOME<br>{{nilai}}</h1>
+        <h1 class="display-4 ml-auto"span>selamat datang<br>{{session.username}},di banteng club</h1>
         <a class="button video-play" data-video-id ="GXx9LR0IVCI">Tekan ini</a>
       </div>
     </div>

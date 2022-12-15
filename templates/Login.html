@@ -22,10 +22,10 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center form_container">
-					<form action ="" method="POST">
+					<form action ="{{url_for('Login')}}" method="POST">
 						<div class="input-group mb-3">
 							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
+								<span class="input-group-text"><i class="fas fa-envelope"></i></span>
 							</div>
 							<input type="text" name="email" class="form-control input_user" value="" placeholder="Email">
 						</div>
@@ -49,8 +49,22 @@
 		
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links">
-						Belum memiliki akun? <a href="./Register.html" class="ml-2">Register</a>
+						Belum memiliki akun? <a href="{{url_for('register')}}" class="ml-2">Register</a>
 					</div>
+					{% with messages = get_flashed_messages(with_categories=true) %}
+							{% if messages %}
+							  	{% for category, message in messages %}
+							  	<!-- alert -->
+							  	<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+								<strong>{{message}}</strong> You should check in on some of those fields below.
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								  <span aria-hidden="true">&times;</span>
+								</button>
+							  	</div>
+								<!-- <li class="{{ category }}">{{ message }}</li> -->
+							  	{% endfor %}
+							{% endif %}
+						    {% endwith %}
 				</div>
 			</div>
 		</div>
