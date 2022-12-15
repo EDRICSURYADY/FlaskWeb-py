@@ -1,0 +1,168 @@
+/* Navigasi Bar */
+
+.navbar-brand,
+.display-4 {
+  font-family: viga;
+  font-size: 40px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-image: url("https://4.bp.blogspot.com/-NAIGN9jH6No/WeVgHxaLGII/AAAAAAAARHU/aoe1Vr6NwCU8hy8AS_tLllh9K5UzZnOIACLcBGAs/s1600/PDIP.jpg");
+  background-size: cover;
+  height: 640px;
+  background-attachment: fixed;
+}
+
+.jumbotron .display-4 {
+  color: black;
+  text-align: left;
+  margin-top: 200px;
+  margin-left: 100px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* Infopanel */
+.info-panel {
+  box-shadow: 0 3px 20px rgba (0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -50px;
+  margin-left: 10px;
+  background-color: rgba(250, 231, 213, 0.609);
+  padding: 30px;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel p {
+  font-size: 14px;
+}
+
+/* WorkingSpace */
+.workingspace {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+
+/* Utility */
+.tombol:hover {
+  text-transform: uppercase;
+  border-radius: 42px;
+}
+.tombol {
+  transition: 0.4s;
+}
+/* Tombol Click AKU Versi Keseluruhan*/
+a.button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #000000f6;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 9px #999;
+  margin-left: 2px;
+}
+
+a.button:hover {
+  background-color: #ff1616;
+}
+
+a.button:active {
+  background-color: #ff7708;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+a.tombol:hover {
+  background-color: #040303; /* Green */
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desktop Version */
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgb(253, 165, 0);
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -80px;
+    height: 640px;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  /* Tombol Click AKU Versi Desktop*/
+  a.button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #000000f6;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 9px #999;
+    margin-left: 10px;
+  }
+  a.button:hover {
+    background-color: #f80202;
+  }
+
+  a.button:active {
+    background-color: #ff7708;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .tulisan {
+    font-size: 20pxa;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}

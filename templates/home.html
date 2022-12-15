@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Selesai AOS -->
+
+    <!-- Pop up Video -->
+    <link rel="stylesheet" href="./css/modal-video.min.css">
+    <!-- Selesai Pop up Video -->
+
+    <!-- My fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Selesai My fotns -->
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Footer.css')}}">
+    <!-- Selesai CSS -->
+</head> 
+
+<body> 
+  <!-- Navbar --> 
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+    <a class="navbar-brand" href="#" class="Page-scroll" >SHOP PDIP</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link active" href="{{url_for('index')}}" class="Page-scroll" >Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{url_for('Fashion')}}"class="Page-scroll">Product</a>
+          <a class="nav-link" href="{{url_for('Contact')}}"class="Page-scroll">Contact Us</a>
+          <a class="btn tombol "href="{{url_for('Login')}}"class="Page-scroll">LOGIN / REGISTER</a>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <!-- Selesai Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <div class="container"data-aos="fade-up-right">
+        <h1 class="display-4 ml-auto"span>WELCOME<br>{{nilai}}</h1>
+        <a class="button video-play" data-video-id ="GXx9LR0IVCI">Tekan ini</a>
+      </div>
+    </div>
+    <!-- Selesai Jumbotron -->
+       <!-- Baris Baru -->
+       <br>
+       <!-- Selesai Baris Baru -->
+       <!-- Container -->
+       <div class="container" data-aos="flip-up" data-aos-duration="1000">
+         <!-- Infopanel -->
+         <div class="row justify-content-center">
+           <div class="col-10 info-panel">
+             <div class="row">
+               <div class="col-lg">
+                 <img src="/templates/IMG/employee.png" alt="employee" class="float-left">
+                 <h4>24 Hours</h4>
+                 <p class="text-justify">Open Chat Hingga 24 jam penuh tanpa henti untuk meningkatkan pelayanan PDIP</p>
+               </div>
+               <div class="col-lg">
+                <img src="/templates/IMG/hires.png" alt="employee" class="float-left">
+                <h4>24 Hours</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div> 
+              <div class="col-lg">
+                <img src="/templates/IMG/hires.png" alt="employee" class="float-left">
+                <h4>24 Hours</h4>
+                <p>Chat tetap terjaga Selama 24 jam non stop</p>
+              </div>
+             </div>
+           </div>
+         </div>
+         <!-- selesai info Panel -->
+       </div>
+      <!-- Selesai Container  -->   
+      <!-- Baris Baru -->
+       <br>
+       <!-- Selesai Baris Baru -->
+       <br>
+       <!-- Working Space -->
+       <div class="row workingspace" data-aos="fade-down" data-aos-duration="3000">
+         <div class="col-0 mr-4">
+           <img src="./img/workingspace.png" alt="" class="img-fluid ml-1 mp-2 mr-2 mpr-2 mt-2" id="about">
+         </div>
+         <br>
+         <div class="col mt-2 ml-4">
+           <h3>About US</h3>
+           <p class="tulisan text-justify mr-4">Kami Menjual Aksesoris Dan Merch Banteng </p>
+         </div>
+       </div>
+       <!-- Selesai Working Space -->
+
+       <!-- Daftar Menu -->
+       <div class="container" data-aos="fade-in">
+        <div class="row">
+          <div class="col text-center " id="menu">
+            <h1>New Arrivals</h1>
+            <br>
+          </div>
+        </div>
+       </div>
+       <!-- Selesai Daftar Menu -->
+
+    <!-- Cards 1 -->
+    <div class="card-deck ml-5 mr-5">
+      <div class="card border-warning" data-aos="fade-right" data-aos-duration="2000">
+        <img class="card-img-top" src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/1/6/19e5e656-945b-4cd9-a2e4-cf92923cb872.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Bendera Banteng</h5>
+          <p class="card-text text-justify">Masih Hangat Baru Cetak</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-warning" data-aos="fade-up" data-aos-duration="2000"> 
+        <img class="card-img-top" src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/27/1a9ce897-2660-4472-b9e7-775ab838d146.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Ganci Banteng</h5>
+          <p class="card-text text-justify">Dijamin Banteng menjaga barang anda</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card border-warning" data-aos="fade-left" data-aos-duration="2000">
+        <img class="card-img-top" src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/17/fa864ec3-a36c-4156-858c-946b03624749.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Lanyard Banteng</h5>
+          <p class="card-text-top">Jiwa Banteng berserta anda</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <!-- Selesai Cards 1 -->
+
+    <!-- Baris Baru -->
+    <br>
+    <!-- Selesai Baris Baru -->
+
+    <!-- Menu Cards 2 -->
+     <!-- Cards 2 -->
+     <div class="card-deck ml-5 mr-5">
+        <div class="card border-warning" data-aos="fade-right" data-aos-duration="2000">
+          <img class="card-img-top" src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/1/13/08e55c29-1119-4b96-ac55-3b2682cae1a5.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Hoodie Banteng Melihatmu</h5>
+            <p class="card-text text-justify">Pakai ini kalau anda PDIP</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card border-warning" data-aos="fade-up" data-aos-duration="2000"> 
+          <img class="card-img-top" src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/2/15/f480f79d-e181-4ad4-ae5c-d84c5bf8c41e.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Hoddie PDIP </h5>
+            <p class="card-text text-justify">Full Print Red & Black </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card border-warning" data-aos="fade-left" data-aos-duration="2000">
+          <img class="card-img-top" src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/22/3b9d16f0-4c4b-4ea3-904a-c361ce5f7bcf.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Tumblr PDIP </h5>
+            <p class="card-text-top">Tumblr tapi PDIP???? yaaaaaa</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <!-- Selesai Cards 2 -->
+
+    <!-- Baris Baru -->
+    <br>
+    <!-- Selesai Baris Baru -->
+
+    
+
+    <!-- Footer -->
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#" id="home">Home</a></li>
+  	 				<li><a href="#about">About US</a></li>
+  	 				<li><a href="#">Fashion</a></li>
+  	 				<li><a href="#">Contact US</a></li>
+            <li><a href="#">Promotion</a></li>
+            <li><a href="#">Login</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+    <!-- Selesai Footer -->
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Selesai AOS -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script> -->
+     <!-- Scrip form pesan -->
+     <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxudo4EFZdc3c6Z5zPuQ-0fIY5PsAZFYRYVOmx2VkX74u1T9JAncreFh8HkqUty82l0/exec'
+      const form = document.forms['E-mail-Contact-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+    
+      form.addEventListener('submit', e => {
+         e.preventDefault()
+
+        //1. Jadi ketika tombol submit di klick
+        //2. tampilkan tombol loading , dan hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // ketika tampilkan tombol kirim , dan hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //tampilkan Alert 
+            myAlert.classList.toggle('d-none');
+            //reset Form pesan
+            form.reset();
+            console.log('Success!', response)})
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <!-- End script pesan  -->
+
+    <!-- Pop js Video -->
+    <script src="./js/jquery-modal-video.min.js"></script>
+    <!-- Selesai pop js video -->
+    <script>
+      $(".video-play").modalVideo();
+    </script>
+  </body>
+</html>
