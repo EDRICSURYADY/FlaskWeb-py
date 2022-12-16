@@ -16,7 +16,7 @@ def index():
     if 'loggedin' in session:
         return render_template('home.html')
     flash('harap login dulu','danger')
-    return redirect(url_for('login'))
+    return redirect(url_for('Login'))
 @app.route('/Fashion')
 def Fashion():
         return render_template('Fashion.html')
