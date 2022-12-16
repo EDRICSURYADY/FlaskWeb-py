@@ -74,54 +74,54 @@ def logout():
 # fungsi untuk menutup koneksi
 def closeDb():
     global conn, cursor
-    cursor.close()
     conn.close()
 
 # fungsi view index() untuk menampilkan data dari database
 @app.route('/admin')
 def admin():
+        cursor  =mysql.connection.cursor()
         container = []
-        cursor.execute('SELECT * FROM tb_user WHERE username=%s')
+        cursor.execute('SELECT * FROM tb_user')
         results = cursor.fetchall()
         for data in results:
          container.append(data)
-        return render_template('admin.html')
+        return render_template('admin.html', container=container)
 
 # fungsi view tambah() untuk membuat form tambah
 @app.route('/tambah', methods=['GET', 'POST'])
 def tambah():
     if request.method == 'POST':
-        id = request.form['id']
+        cursor  =mysql.connection.cursor()
         username = request.form['username']
         email = request.form['email']
         password = request.form['password']
         sql = "INSERT INTO tb_user (username,email,password) VALUES (%s, %s, %s)"
         val = (username, email, password)
         cursor.execute(sql, val)
-        conn.commit()
-        closeDb()
         return redirect(url_for('admin'))
     else:
         return render_template('tambah.html')
         # fungsi untuk menghapus data
-#fungsi view edit() untuk form edit
+@app.route('/hapus/<id>',methods=['GET','POST'])
+def hapus(id):
+    cursor=mysql.connection.cursor()
+    cursor.execute('DELETE FROM tb_user WHERE id=%s', [id,])
+    return redirect(url_for('admin'))
+        #fungsi view edit() untuk form edit
 @app.route('/edit/<id>', methods=['GET','POST'])
 def edit(id):
-    cursor.execute('SELECT * FROM tb_user WHERE id=%s', (id))
+    cursor=mysql.connection.cursor()
+    cursor.execute('SELECT * FROM tb_user WHERE id=%s', [id,])
     data = cursor.fetchone()
     if request.method == 'POST':
         id = request.form['id']
         username = request.form['username']
         password = request.form['password']
-        
         sql = "UPDATE tb_user SET username=%s, password=%s WHERE id =%s"
-        val = (username, password, id)
+        val = (id,username, password)
         cursor.execute(sql, val)
-        conn.commit()
-        closeDb()
         return redirect(url_for('admin'))
     else:
-        closeDb()
         return render_template('edit.html', data=data)
         
 if __name__=="__main__":
